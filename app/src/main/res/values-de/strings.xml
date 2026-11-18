@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lern-Timer</string>
+
+    <string name="work">Arbeit</string>
+    <string name="brk">Pause</string>
+    <string name="work_caps">ARBEIT</string>
+    <string name="break_caps">PAUSE</string>
+    <string name="ready">Bereit</string>
+    <string name="paused">Angehalten</string>
+    <string name="session">Runde %d</string>
+
+    <string name="start">Start</string>
+    <string name="pause">Anhalten</string>
+    <string name="resume">Fortsetzen</string>
+    <string name="skip">Weiter ›</string>
+    <string name="stop">Stopp</string>
+    <string name="stop_music">■  Musik aus</string>
+    <string name="play_music">▶  Musik an</string>
+
+    <string name="minutes">%d Min.</string>
+    <string name="no_music">Keine Musik (still)</string>
+    <string name="choose_music">Musik wählen</string>
+    <string name="change">Ändern</string>
+    <string name="songs_count">%d Titel</string>
+
+    <string name="music_for_work">Musik für die Arbeit</string>
+    <string name="music_for_break">Musik für die Pause</string>
+    <string name="opt_songs">Titel (einen oder mehrere wählen)</string>
+    <string name="opt_m3u">Playlist-Datei (.m3u, z. B. aus Musicolet exportiert)</string>
+    <string name="opt_phone">Auf dem Gerät gespeicherte Playlist</string>
+    <string name="choose_playlist">Playlist wählen</string>
+    <string name="playlist">Playlist</string>
+    <string name="selected_audio">Ausgewählte Audiodatei</string>
+
+    <string name="no_picker">Keine Dateiauswahl verfügbar</string>
+    <string name="no_playlists_title">Keine Playlists gefunden</string>
+    <string name="no_playlists_msg">Öffne in Musicolet das Menü der Playlist und exportiere sie als M3U-Datei (oder in den Android-Medienspeicher). Versuche es dann erneut.</string>
+    <string name="ok">OK</string>
+    <string name="none_found">Keiner der Titel dieser Playlist wurde auf dem Gerät gefunden</string>
+    <string name="added_some">%1$d von %2$d Titeln hinzugefügt (einige wurden nicht gefunden)</string>
+    <string name="added_all">%d Titel hinzugefügt</string>
+    <string name="not_playlist">Das scheint keine Playlist-Datei (.m3u) zu sein</string>
+    <string name="need_permission">Für Playlists wird die Berechtigung „Musik und Audio“ benötigt (Einstellungen → Apps → Lern-Timer → Berechtigungen)</string>
+    <string name="cant_play">Dieser Titel kann nicht abgespielt werden. Bitte wähle die Musik erneut.</string>
+
+    <string name="language">Sprache</string>
+    <string name="lang_code" translatable="false">DE</string>
+    <string name="lang_system">Gerätesprache</string>
+
+    <string name="channel_name">Timer</string>
+    <string name="paused_left">Angehalten · noch %s</string>
+</resources>

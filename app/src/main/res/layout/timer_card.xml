@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cardTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Work"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/minus"
+            style="@style/SmallButton"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:text="−"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/minutes"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="25 min"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/plus"
+            style="@style/SmallButton"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:text="+"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mediaName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="No music (silent)"
+        android:textColor="#DDDDE0"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/pick"
+            style="@style/SmallButton"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="Choose music" />
+
+        <Button
+            android:id="@+id/play"
+            style="@style/SmallButton"
+            android:layout_width="56dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="8dp"
+            android:text="▶" />
+
+        <Button
+            android:id="@+id/clear"
+            style="@style/SmallButton"
+            android:layout_width="56dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="8dp"
+            android:text="✕" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Study Timer</string>
+
+    <string name="work">Work</string>
+    <string name="brk">Break</string>
+    <string name="work_caps">WORK</string>
+    <string name="break_caps">BREAK</string>
+    <string name="ready">Ready</string>
+    <string name="paused">Paused</string>
+    <string name="session">Session %d</string>
+
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="skip">Skip ›</string>
+    <string name="stop">Stop</string>
+    <string name="stop_music">■  Stop music</string>
+    <string name="play_music">▶  Play music</string>
+
+    <string name="minutes">%d min</string>
+    <string name="no_music">No music (silent)</string>
+    <string name="choose_music">Choose music</string>
+    <string name="change">Change</string>
+    <string name="songs_count">%d songs</string>
+
+    <string name="music_for_work">Music for Work</string>
+    <string name="music_for_break">Music for Break</string>
+    <string name="opt_songs">Songs (pick one or several)</string>
+    <string name="opt_m3u">Playlist file (.m3u, e.g. exported from Musicolet)</string>
+    <string name="opt_phone">Playlist saved on the phone</string>
+    <string name="choose_playlist">Choose a playlist</string>
+    <string name="playlist">Playlist</string>
+    <string name="selected_audio">Selected audio</string>
+
+    <string name="no_picker">No file picker available</string>
+    <string name="no_playlists_title">No playlists found</string>
+    <string name="no_playlists_msg">In Musicolet, open the playlist\'s menu and export/save it as an M3U file (or to Android media storage), then try again.</string>
+    <string name="ok">OK</string>
+    <string name="none_found">None of the songs in this playlist were found on the device</string>
+    <string name="added_some">Added %1$d of %2$d songs (some weren\'t found)</string>
+    <string name="added_all">Added %d songs</string>
+    <string name="not_playlist">That doesn\'t look like a playlist file (.m3u)</string>
+    <string name="need_permission">Playlists need the Music and audio permission (Settings → Apps → Study Timer → Permissions)</string>
+    <string name="cant_play">Can\'t play this song. Please choose the music again.</string>
+
+    <string name="language">Language</string>
+    <string name="lang_code" translatable="false">EN</string>
+    <string name="lang_system">Phone language</string>
+
+    <string name="channel_name">Timer</string>
+    <string name="paused_left">Paused · %s left</string>
+</resources>
