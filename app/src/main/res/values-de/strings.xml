@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lern-Timer</string>
+    <string name="app_name">PoFocus</string>
 
     <string name="work">Arbeit</string>
     <string name="brk">Pause</string>
@@ -41,7 +41,7 @@
     <string name="added_some">%1$d von %2$d Titeln hinzugefügt (einige wurden nicht gefunden)</string>
     <string name="added_all">%d Titel hinzugefügt</string>
     <string name="not_playlist">Das scheint keine Playlist-Datei (.m3u) zu sein</string>
-    <string name="need_permission">Für Playlists wird die Berechtigung „Musik und Audio“ benötigt (Einstellungen → Apps → Lern-Timer → Berechtigungen)</string>
+    <string name="need_permission">Für Playlists wird die Berechtigung „Musik und Audio“ benötigt (Einstellungen → Apps → PoFocus → Berechtigungen)</string>
     <string name="cant_play">Dieser Titel kann nicht abgespielt werden. Bitte wähle die Musik erneut.</string>
 
     <string name="language">Sprache</string>
@@ -50,4 +50,13 @@
 
     <string name="channel_name">Timer</string>
     <string name="paused_left">Angehalten · noch %s</string>
+    <string name="channel_media">Musik</string>
+    <string name="stop_timer">Timer stoppen</string>
+    <string name="play">Abspielen</string>
+    <string name="next">Nächster</string>
+    <string name="previous">Vorheriger</string>
+    <string name="cant_play_skip">Ein Titel konnte nicht abgespielt werden und wurde übersprungen</string>
+    <string name="cant_play_any">Keiner der gewählten Titel kann abgespielt werden. Bitte wähle die Musik erneut.</string>
+    <string name="audio_busy">Musik kann gerade nicht starten (Audio wird verwendet, z. B. durch einen Anruf)</string>
+    <string name="notif_off">Benachrichtigungen sind aus. Hier tippen zum Einschalten.</string>
 </resources>

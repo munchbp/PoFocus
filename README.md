@@ -1,4 +1,4 @@
-# Study Timer
+# PoFocus
 
 A minimal Pomodoro timer for Android: one Work timer and one Break timer (5–60 min, 5-minute steps), optional music per timer, and a beep at every switch.
 
@@ -13,10 +13,13 @@ A minimal Pomodoro timer for Android: one Work timer and one Break timer (5–60
 - The app saves a copy of the playlist when you choose it. If you change the playlist in Musicolet later, export it and choose it again here.
 
 ### Getting a playlist out of Musicolet
-In Musicolet, open the **Playlists** tab, then tap the **⋮** menu on a playlist (or the menu on the Playlists screen) and look for **Export**. Choose **M3U file** and remember the folder it saves to, or choose **Android media storage**. Then in Study Timer pick "Playlist file" or "Playlist saved on the phone". The first time, allow the **Music and audio** permission, which the app needs to find the songs.
+In Musicolet, open the **Playlists** tab, then tap the **⋮** menu on a playlist (or the menu on the Playlists screen) and look for **Export**. Choose **M3U file** and remember the folder it saves to, or choose **Android media storage**. Then in PoFocus pick "Playlist file" or "Playlist saved on the phone". The first time, allow the **Music and audio** permission, which the app needs to find the songs.
 - **Start** runs Work → beep → Break → beep → Work … until you press **Stop**.
 - While running: **Pause/Resume**, **Skip ›** (go to the next timer now), and **Stop music / Play music** for the current timer.
 - **🌐 language button** (top right): Phone language, English or Deutsch. By default the app follows the device language, so it is German on a German phone. If you switch language while a timer is running, the notification changes after you press Stop.
+- **Music controls everywhere:** while music plays, it appears in the notification shade / media panel and on the lock screen (play/pause, previous, next, seek, and "Stop timer"). Bluetooth and headphone buttons work too. Unplugging headphones pauses the music, and calls pause it.
+- **Change things while it runs:** − / + on the running timer makes it shorter or longer right away. Choosing new music for the running timer switches to it immediately.
+- **Closing the app** (swiping it away in recent apps) stops the timer and the music. Pressing Home keeps it running.
 - The timer keeps running with the screen off. You can also control it from the notification.
 
 ## Getting the APK (choose one)
@@ -25,7 +28,7 @@ In Musicolet, open the **Playlists** tab, then tap the **⋮** menu on a playlis
 1. Create a free GitHub account, then a new **private** repository.
 2. Click **"uploading an existing file"** and drag in everything from this folder, **including the hidden `.github` folder**. (If your file browser hides it, turn on "show hidden files" first.)
 3. Open the **Actions** tab and wait about 3 minutes for "Build APK" to turn green.
-4. Click the run and download **StudyTimer-apk** under *Artifacts*. Unzip it to get `app-debug.apk`.
+4. Click the run and download **PoFocus-apk** under *Artifacts*. Unzip it to get `app-debug.apk`.
 
 ### Option B: Android Studio (on a PC/Mac)
 1. Install Android Studio, then choose **Open** and select this folder.
@@ -35,7 +38,7 @@ In Musicolet, open the **Playlists** tab, then tap the **⋮** menu on a playlis
 ## Installing on the Galaxy S24 / Tab S6
 1. Copy `app-debug.apk` to the device and tap it in **My Files**.
 2. Allow "Install unknown apps" for My Files when asked.
-3. Open Study Timer and allow notifications.
-4. **Samsung tip (important):** go to Settings → Apps → Study Timer → Battery and set it to **Unrestricted**, so Samsung never pauses the timer in the background.
+3. Open PoFocus and allow notifications.
+4. **Samsung tip (important):** go to Settings → Apps → PoFocus → Battery and set it to **Unrestricted**, so Samsung never pauses the timer in the background.
 
 The beep plays on the **alarm volume**, so it can be heard even when the phone is on silent. Check that the alarm volume isn't set to zero.

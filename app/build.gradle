@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.personal.studytimer'
+    namespace 'com.personal.pofocus'
     compileSdk 35
 
     defaultConfig {
-        applicationId 'com.personal.studytimer'
+        applicationId 'com.personal.pofocus'
         minSdk 26
         targetSdk 34
         versionCode 1

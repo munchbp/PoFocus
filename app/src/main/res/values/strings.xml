@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Study Timer</string>
+    <string name="app_name">PoFocus</string>
 
     <string name="work">Work</string>
     <string name="brk">Break</string>
@@ -41,7 +41,7 @@
     <string name="added_some">Added %1$d of %2$d songs (some weren\'t found)</string>
     <string name="added_all">Added %d songs</string>
     <string name="not_playlist">That doesn\'t look like a playlist file (.m3u)</string>
-    <string name="need_permission">Playlists need the Music and audio permission (Settings → Apps → Study Timer → Permissions)</string>
+    <string name="need_permission">Playlists need the Music and audio permission (Settings → Apps → PoFocus → Permissions)</string>
     <string name="cant_play">Can\'t play this song. Please choose the music again.</string>
 
     <string name="language">Language</string>
@@ -50,4 +50,13 @@
 
     <string name="channel_name">Timer</string>
     <string name="paused_left">Paused · %s left</string>
+    <string name="channel_media">Music</string>
+    <string name="stop_timer">Stop timer</string>
+    <string name="play">Play</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="cant_play_skip">Skipped a song that can\'t be played</string>
+    <string name="cant_play_any">None of the chosen songs can be played. Please choose the music again.</string>
+    <string name="audio_busy">Music can\'t start right now (audio is in use, e.g. by a call)</string>
+    <string name="notif_off">Notifications are off. Tap here to turn them on.</string>
 </resources>
