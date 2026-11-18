@@ -146,6 +146,7 @@ public class MainActivity extends Activity {
         Settings.setMinutes(this, slot, before + delta);
         int change = Settings.getMinutes(this, slot) - before;
         if (change != 0 && TimerService.isActive()) send(TimerService.ACTION_ADJUST, slot, change);
+        if (change != 0) Sync.publish(this);
         render();
     }
 
@@ -444,6 +445,7 @@ public class MainActivity extends Activity {
     protected void onResume() {
         super.onResume();
         updateNotifWarning();
+        Sync.pull(this);
         handler.post(refresh);
     }
 

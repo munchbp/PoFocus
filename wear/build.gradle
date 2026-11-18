@@ -1,0 +1,47 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.personal.pofocus.wear'
+    compileSdk 35
+
+    defaultConfig {
+        // Same app ID and signing key as the phone app: required for the watch connection.
+        applicationId 'com.personal.pofocus'
+        minSdk 30
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+    }
+
+    signingConfigs {
+        pofocus {
+            storeFile rootProject.file('pofocus.keystore')
+            storePassword 'pofocus123'
+            keyAlias 'pofocus'
+            keyPassword 'pofocus123'
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.pofocus
+        }
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.pofocus
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    lint { abortOnError false }
+}
+
+dependencies {
+    implementation 'com.google.android.gms:play-services-wearable:19.0.0'
+}

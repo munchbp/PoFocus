@@ -39,6 +39,15 @@ final class Settings {
         p(c).edit().putInt(k(slot, "min"), minutes).apply();
     }
 
+    /** When the minutes were last changed (here or on the watch). */
+    static long getSyncTime(Context c) {
+        return p(c).getLong("sync_ts", 0);
+    }
+
+    static void setSyncTime(Context c, long ts) {
+        p(c).edit().putLong("sync_ts", ts).apply();
+    }
+
     // ---------------- language ----------------
 
     /** "" = follow the phone's language, otherwise "en" or "de". */

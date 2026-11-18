@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- tomato -->
+    <path android:fillColor="#E8553E"
+        android:pathData="M54,36a22,22 0,1 0,0.001 0z" />
+    <!-- leaf -->
+    <path android:fillColor="#3FB28A"
+        android:pathData="M54,38c-4,-6 -10,-7 -14,-5 4,1 8,4 10,7zM54,38c4,-6 10,-7 14,-5 -4,1 -8,4 -10,7zM52,28h4v10h-4z" />
+    <!-- clock hand -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M52.5,46h3v12.5l7,4 -1.5,2.6 -8.5,-5z" />
+</vector>

@@ -28,7 +28,7 @@ In Musicolet, open the **Playlists** tab, then tap the **⋮** menu on a playlis
 1. Create a free GitHub account, then a new **private** repository.
 2. Click **"uploading an existing file"** and drag in everything from this folder, **including the hidden `.github` folder**. (If your file browser hides it, turn on "show hidden files" first.)
 3. Open the **Actions** tab and wait about 3 minutes for "Build APK" to turn green.
-4. Click the run and download **PoFocus-apk** under *Artifacts*. Unzip it to get `app-debug.apk`.
+4. Click the run and download **PoFocus** under *Artifacts*. Unzip it to get `PoFocus.apk` (phone/tablet) and `PoFocus-Watch.apk` (Galaxy Watch).
 
 ### Option B: Android Studio (on a PC/Mac)
 1. Install Android Studio, then choose **Open** and select this folder.
@@ -42,3 +42,18 @@ In Musicolet, open the **Playlists** tab, then tap the **⋮** menu on a playlis
 4. **Samsung tip (important):** go to Settings → Apps → PoFocus → Battery and set it to **Unrestricted**, so Samsung never pauses the timer in the background.
 
 The beep plays on the **alarm volume**, so it can be heard even when the phone is on silent. Check that the alarm volume isn't set to zero.
+
+## Watch app (Galaxy Watch4 or newer)
+- Works on its own: Work/Break timer with 5-minute steps, − / + while running, vibration and beep at each switch, and a notification with Pause/Stop.
+- Scroll with the bezel or crown, or by swiping, to reach the Work/Break minutes.
+- With the phone nearby, Work/Break minutes stay the same on both. The newest change wins.
+- The watch uses the watch's own language (English or German).
+- The phone's music controls show up on the watch by themselves (Samsung media controller).
+
+### Installing on the watch
+The watch can't install APK files by tapping them. Use the free **Wear Installer 2** app on the phone:
+1. Watch: Settings → About watch → Software information → tap **Software version** 5 times → Developer options appear.
+2. Watch: Settings → Developer options → turn on **ADB debugging** and **Wireless debugging** (watch and phone on the same Wi-Fi).
+3. Watch: Wireless debugging → **Pair new device** shows a code, IP and port. Pair in Wear Installer 2.
+4. In Wear Installer 2, choose `PoFocus-Watch.apk` and install.
+5. Afterwards turn Wireless debugging off again (saves battery).

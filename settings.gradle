@@ -7,3 +7,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "PoFocus"
 include ':app'
+include ':wear'

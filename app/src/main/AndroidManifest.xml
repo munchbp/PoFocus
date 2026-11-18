@@ -32,5 +32,18 @@
             android:name=".TimerService"
             android:exported="false"
             android:foregroundServiceType="mediaPlayback" />
+
+        <!-- receives Work/Break minutes changed on the watch -->
+        <service
+            android:name=".SyncListenerService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.DATA_CHANGED" />
+                <data
+                    android:host="*"
+                    android:pathPrefix="/settings"
+                    android:scheme="wear" />
+            </intent-filter>
+        </service>
     </application>
 </manifest>

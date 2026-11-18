@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PoFocus</string>
+    <string name="work">Work</string>
+    <string name="brk">Break</string>
+    <string name="work_caps">WORK</string>
+    <string name="break_caps">BREAK</string>
+    <string name="ready">Ready</string>
+    <string name="paused">Paused</string>
+    <string name="session">Session %d</string>
+    <string name="minutes">%d min</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="skip">Skip</string>
+    <string name="stop">Stop</string>
+    <string name="channel_name">Timer</string>
+    <string name="paused_left">Paused · %s left</string>
+</resources>

@@ -14,10 +14,24 @@ android {
         versionName '1.0'
     }
 
+    // One fixed key, so updates install over the old app and the phone and
+    // watch apps are allowed to talk to each other.
+    signingConfigs {
+        pofocus {
+            storeFile rootProject.file('pofocus.keystore')
+            storePassword 'pofocus123'
+            keyAlias 'pofocus'
+            keyPassword 'pofocus123'
+        }
+    }
+
     buildTypes {
+        debug {
+            signingConfig signingConfigs.pofocus
+        }
         release {
             minifyEnabled false
-            signingConfig signingConfigs.debug
+            signingConfig signingConfigs.pofocus
         }
     }
 
@@ -27,4 +41,9 @@ android {
     }
 
     lint { abortOnError false }
+}
+
+dependencies {
+    // Watch connection (settings sync with the PoFocus watch app)
+    implementation 'com.google.android.gms:play-services-wearable:19.0.0'
 }
