@@ -27,6 +27,7 @@ public class MainActivity extends Activity {
     private final Button[] minusBtn = new Button[2];
     private final Button[] plusBtn = new Button[2];
 
+    private TextView syncStatus;
     private final Handler handler = new Handler(Looper.getMainLooper());
     private final Runnable refresh = new Runnable() {
         @Override public void run() {
@@ -39,6 +40,11 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        syncStatus = findViewById(R.id.syncStatus);
+        syncStatus.setOnClickListener(v -> {   // tap = send my minutes to the other device now
+            Sync.publish(this);
+            android.widget.Toast.makeText(this, R.string.sync_sent, android.widget.Toast.LENGTH_SHORT).show();
+        });
 
         scroll = findViewById(R.id.scroll);
         phaseText = findViewById(R.id.phaseText);
@@ -88,6 +94,9 @@ public class MainActivity extends Activity {
     }
 
     private void render() {
+        String st = Sync.status(this);
+        syncStatus.setVisibility(st == null ? View.GONE : View.VISIBLE);
+        if (st != null) syncStatus.setText(st);
         boolean running = WatchTimer.isRunning(this);
         boolean paused = WatchTimer.isPaused(this);
         int phase = running ? WatchTimer.phase(this) : Settings.WORK;

@@ -59,4 +59,9 @@
     <string name="cant_play_any">Keiner der gewählten Titel kann abgespielt werden. Bitte wähle die Musik erneut.</string>
     <string name="audio_busy">Musik kann gerade nicht starten (Audio wird verwendet, z. B. durch einen Anruf)</string>
     <string name="notif_off">Benachrichtigungen sind aus. Hier tippen zum Einschalten.</string>
+    <string name="sync_connected">⌚ Verbunden mit %s</string>
+    <string name="sync_none">⌚ Keine Uhr verbunden</string>
+    <string name="sync_error">⚠ Sync-Problem: %s</string>
+    <string name="sync_last">synchronisiert %s</string>
+    <string name="sync_sent">An die Uhr gesendet</string>
 </resources>

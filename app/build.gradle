@@ -10,8 +10,8 @@ android {
         applicationId 'com.personal.pofocus'
         minSdk 26
         targetSdk 34
-        versionCode 1
-        versionName '1.0'
+        versionCode 2
+        versionName '1.1'
     }
 
     // One fixed key, so updates install over the old app and the phone and
@@ -34,6 +34,8 @@ android {
             signingConfig signingConfigs.pofocus
         }
     }
+
+    buildFeatures { buildConfig true }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17

@@ -16,4 +16,9 @@
     <string name="stop">Stopp</string>
     <string name="channel_name">Timer</string>
     <string name="paused_left">Angehalten · noch %s</string>
+    <string name="sync_connected">📱 %s</string>
+    <string name="sync_none">📱 Handy nicht verbunden</string>
+    <string name="sync_error">⚠ Sync: %s</string>
+    <string name="sync_last">synchr. %s</string>
+    <string name="sync_sent">An das Handy gesendet</string>
 </resources>
